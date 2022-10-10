@@ -1,0 +1,557 @@
+
+/* /inicio menu/conf da pagina geral */
+*{
+  font-family: bohemian soul;
+}
+
+body{
+  background-color: #FFFEE2;
+}
+:root {
+  --main-color: rgb(255, 255, 152);
+  --black: #937396;
+  --bg: #df9fe4;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+* {
+  font-family: "bohemian soul";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5rem;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  letter-spacing: 0.2rem;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 10%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(171, 135, 255, 0.716);
+  height: 80px;
+}
+
+.header .logo img {
+  height: 120px;
+  line-height: 60px;
+  margin-left: 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  color: rgb(255, 255, 152);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.header .icons div {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+.header .icons div:hover {
+  color: white;
+}
+#menu-btn {
+  display: none;
+}
+.header .search-form {
+  position: absolute;
+  top: 115%;
+  right: 7%;
+  background: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.header .search-form.active {
+  transform: scaleY(1);
+}
+
+.header .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 1rem;
+  text-transform: none;
+}
+
+.header .search-form label {
+  cursor: pointer;
+  font-size: 2.2rem;
+  margin-right: 1.5rem;
+  color: var(--black);
+}
+
+.header .search-form label:hover {
+  color: var(--main-color);
+}
+
+
+/* /Fim do menu */
+
+@media screen and (max-width: 520px) {
+}
+
+.bloco1 {
+  width: 900px;
+  height: 370px;
+  background-color: rgba(255, 255, 255, 0.736);
+  color: white;
+  border: 4px dashed pink;
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.ovoprincipal {
+  width: 300px;
+  height: 300px;
+  border-radius: 225px;
+  padding-right: 20px;
+}
+
+.bloco1 h2 {
+  width: 200px;
+  height: 100px;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: -70px;
+  color: rgb(161, 2, 205);
+}
+
+.cardapio {
+  width: 500px;
+  height: 90px;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: bohemian soul;
+  background-color: white;
+  border-radius: 14px;
+  border-top: 4px groove rgb(171, 135, 255);
+  border-bottom: 4px groove rgb(171, 135, 255);
+ 
+}
+
+.bloco2 {
+  width: 500px;
+  height: 450px;
+  margin-top: 40px;
+  gap: 10px;
+  
+}
+
+
+.h2 {
+  width: auto;
+  height: auto;
+  padding-top: 80px;
+  font-size: 20px;
+ 
+}
+
+.ovop {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  margin-top: 70px;
+  font-size: 20px;
+  color: rgb(161, 2, 205);
+  gap: 10px;
+  
+}
+
+.ovo1{
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  border-radius: 20px;
+  gap: 10px;
+  
+}
+
+.ovooreo {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  border: 2px outset;
+  border-radius: 10px;
+  gap: 10px;
+  
+}
+
+.ovo2{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.ovobrigadeiro {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  border: 2px outset;
+  border-radius: 10px;
+  gap: 10px;
+  
+}
+
+.ovo3{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.ovoninho {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  border: 2px outset;
+  border-radius: 10px;
+}
+
+.ovo4{
+height: 200px;
+width: 200px;
+border-radius: 20px;
+}
+
+.ovoprestigio {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  border: 2px outset;
+  border-radius: 10px;
+}
+
+.p1{
+height: 285px;
+width: 285px;
+border-radius: 20px;
+}
+
+.p2{
+height: 285px;
+width: 285px;
+border-radius: 20px;
+}
+
+
+.p3{
+height: 285px;
+width: 285px;
+border-radius: 30px;
+}
+
+.container{
+  margin: auto;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 200px;
+  font-size: 12px;
+}
+
+.presente {
+  width: 98%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  margin-top: -80px;
+  color: rgb(161, 2, 205);
+  
+}
+
+.container2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  padding-bottom: 200px;
+  font-size: 13px;
+  
+}
+
+.preco {
+  width: auto;
+  height: 50px;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.container .botao {
+  width: auto;
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: pink;
+  color: white;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+.container2 .botao {
+  width: auto;
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: pink;
+  color: white;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+.caixa {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  border: 2px outset;
+  border-radius: 10px;
+}
+
+.coracao {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  border: 2px outset;
+  border-radius: 10px;
+}
+
+
+.brigadeiro {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  border: 2px outset;
+  border-radius: 10px;
+}
+
+
+.botao:hover {
+  background-color: hotpink;
+  
+}
+
+.ovo1:hover, .ovo2:hover, .ovo3:hover, .ovo4:hover, .p1:hover, .p2:hover, .p3:hover {
+  cursor: pointer;
+  zoom: 120%;
+}
+
+
+@media screen and (max-width: 520px) {
+}
+/* /6 */
+.footer2 {
+  background: var(--black);
+  text-align: center;
+  line-height: 10rem;
+  background-color: #937396;
+  padding: 2rem;
+  height: 300px;
+}
+
+.footer .share {
+  padding: 1rem 0;
+}
+
+.footer .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  border: var(--border);
+  margin: 0.3rem;
+  border-radius: 50%;
+}
+
+.footer .share a:hover {
+  background-color: var(--main-color);
+}
+
+.footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem 10%;
+  gap: 2rem;
+}
+
+.footer .links a {
+  
+  padding: 0.7rem 2rem;
+  color: #fff;
+  border: var(--border);
+  font-size: 2rem;
+  margin-top: -50px;
+}
+
+.footer .links a:hover {
+  background: var(--main-color);
+}
+
+.footer .credit {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: lighter;
+  padding: 1.5rem;
+  margin-top: -60px;
+}
+
+.footer .credit span {
+  color: var(--main-color);
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: 50rem;
+  }
+
+  .header .navbar.active {
+    right: 0;
+  }
+
+  .header .navbar a {
+    color: var(--black);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .header .search-form {
+    width: 90%;
+    right: 2rem;
+  }
+
+  .home {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+
+  .home .content p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+
+
